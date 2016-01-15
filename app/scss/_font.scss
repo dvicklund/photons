@@ -3,10 +3,11 @@ $textFontFamily: 'Nova Round' serif;
 
 h1 {
 	font-family: $headMainFontFamily;
-	font-size: 50px;
+	font-size: 6vh;
 }
 
 a {
 	font-family: $textFontFamily;
-	font-size: 20px;
+	font-size: 2vh;
+	text-decoration: none;
 }

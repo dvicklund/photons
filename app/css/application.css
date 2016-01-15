@@ -32,10 +32,14 @@ table {
 
 body {
   background: url("photon.png") no-repeat center center fixed;
+  background-size: 100vh;
   background-color: black; }
 
 * {
   color: white; }
+
+a {
+  background-color: rgba(0, 0, 0, 0.3); }
 
 h1 {
   margin: 3em auto;
@@ -64,8 +68,9 @@ a:hover {
 
 h1 {
   font-family: "Gravitas One" sans-serif;
-  font-size: 50px; }
+  font-size: 6vh; }
 
 a {
   font-family: "Nova Round" serif;
-  font-size: 20px; }
+  font-size: 2vh;
+  text-decoration: none; }

@@ -2,9 +2,14 @@ $primaryColor: hsl(249, 82%, 19%);
 
 body {
 	background: url('photon.png') no-repeat center center fixed;
+	background-size: 100vh;
 	background-color: black;
 }
 
 * {
 	color: white;
+}
+
+a {
+	background-color: hsla(0, 10%, 0%, 0.3);
 }
