@@ -1,0 +1,12 @@
+$headMainFontFamily: 'Gravitas One' sans-serif;
+$textFontFamily: 'Nova Round' serif;
+
+h1 {
+	font-family: $headMainFontFamily;
+	font-size: 50px;
+}
+
+a {
+	font-family: $textFontFamily;
+	font-size: 20px;
+}
