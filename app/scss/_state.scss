@@ -5,6 +5,13 @@ a:hover {
 	animation-direction: alternate;
 }
 
+body:before {
+	animation-duration: 20s;
+	animation-name: rotateBg;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
 @keyframes blowup {
 	from {
 		font-size: 2vh;
@@ -12,5 +19,15 @@ a:hover {
 	
 	to {
 		font-size: 2.3vh;
+	}
+}
+
+@keyframes rotateBg {
+	from {
+		transform: rotate(0turn);
+	}
+
+	to {
+		transform: rotate(1turn);
 	}
 }
