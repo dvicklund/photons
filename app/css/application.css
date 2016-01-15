@@ -52,8 +52,12 @@ body:before {
   background: url("photon.png") no-repeat center center; }
 
 h1 {
+  display: inline-block;
   margin: 3em auto;
   order: 2; }
+
+a {
+  display: inline-block; }
 
 header {
   height: 100vh;
@@ -70,11 +74,16 @@ header {
 .right {
   order: 3; }
 
+@media (max-width: 760px) {
+  h1 {
+    display: block; } }
+
 a:hover {
   animation-duration: 0.7s;
   animation-name: blowup;
   animation-iteration-count: infinite;
-  animation-direction: alternate; }
+  animation-direction: alternate;
+  animation-timing-function: linear; }
 
 body:before {
   animation-duration: 20s;

@@ -3,6 +3,7 @@ a:hover {
 	animation-name: blowup;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+	animation-timing-function: linear;
 }
 
 body:before {

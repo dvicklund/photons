@@ -13,8 +13,13 @@ body:before {
 }
 
 h1 {
+	display: inline-block;
 	margin: 3em auto;
 	order: 2;
+}
+
+a {
+	display: inline-block;
 }
 
 header {
@@ -33,4 +38,10 @@ header {
 
 .right {
 	order: 3;
+}
+
+@media (max-width: 760px) {
+	h1 {
+		display: block;
+	}
 }
