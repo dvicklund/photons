@@ -64,17 +64,16 @@ header {
   order: 3; }
 
 a:hover {
-  animation-duration: 1.5s;
+  animation-duration: 0.7s;
   animation-name: blowup;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
 
 @keyframes blowup {
   from {
     font-size: 2vh; }
-  50% {
-    font-size: 2.4vh; }
   to {
-    font-size: 2vh; } }
+    font-size: 2.3vh; } }
 
 h1 {
   font-family: "Gravitas One" sans-serif;
