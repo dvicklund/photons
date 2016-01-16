@@ -26,16 +26,9 @@ body:before {
 @keyframes rotateBg {
 	from {
 		transform: rotate(0turn);
-		background-color: hsl(0, 100%, 50%);
-	}
-
-	50% {
-		transform: rotate(0.5turn);
-		background-color: hsl(180, 100%, 50%);
 	}
 
 	to {
 		transform: rotate(1turn);
-		background-color: hsl(360, 100%, 50%);
 	}
 }

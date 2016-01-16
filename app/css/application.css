@@ -49,7 +49,7 @@ body:before {
   height: 100vh;
   width: 100vw;
   z-index: -1;
-  background: url("photonTransp.png") no-repeat center center; }
+  background: url("photon.png") no-repeat center center; }
 
 h1 {
   display: inline-block;
@@ -99,14 +99,9 @@ body:before {
 
 @keyframes rotateBg {
   from {
-    transform: rotate(0turn);
-    background-color: red; }
-  50% {
-    transform: rotate(0.5turn);
-    background-color: cyan; }
+    transform: rotate(0turn); }
   to {
-    transform: rotate(1turn);
-    background-color: red; } }
+    transform: rotate(1turn); } }
 
 h1 {
   font-family: "Gravitas One" sans-serif;
