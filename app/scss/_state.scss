@@ -6,12 +6,14 @@ a:hover {
 	animation-timing-function: linear;
 }
 
-body:before {
+.background {
 	animation-duration: 20s;
 	animation-name: rotateBg;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
+
+
 
 @keyframes blowup {
 	from {
@@ -26,9 +28,19 @@ body:before {
 @keyframes rotateBg {
 	from {
 		transform: rotate(0turn);
+		background-color: hsl(0, 100%, 75%);
+	}
+
+	33% {
+		background-color: hsl(120, 100%, 75%);
+	}
+
+	66% {
+		background-color: hsl(240, 100%, 75%);
 	}
 
 	to {
 		transform: rotate(1turn);
+		background-color: hsl(0, 100%, 75%);
 	}
 }

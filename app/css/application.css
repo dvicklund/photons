@@ -43,13 +43,13 @@ body {
   position: relative;
   overflow: hidden; }
 
-body:before {
-  content: "";
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
+.background {
   z-index: -1;
-  background: url("photon.png") no-repeat center center; }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -512px;
+  margin-left: -512px; }
 
 h1 {
   display: inline-block;
@@ -78,6 +78,10 @@ header {
   h1 {
     display: block; } }
 
+@media (orientation: landscape) {
+  h1 {
+    display: inline-block; } }
+
 a:hover {
   animation-duration: 0.7s;
   animation-name: blowup;
@@ -85,7 +89,7 @@ a:hover {
   animation-direction: alternate;
   animation-timing-function: linear; }
 
-body:before {
+.background {
   animation-duration: 20s;
   animation-name: rotateBg;
   animation-iteration-count: infinite;
@@ -99,9 +103,15 @@ body:before {
 
 @keyframes rotateBg {
   from {
-    transform: rotate(0turn); }
+    transform: rotate(0turn);
+    background-color: #ff8080; }
+  33% {
+    background-color: #80ff80; }
+  66% {
+    background-color: #8080ff; }
   to {
-    transform: rotate(1turn); } }
+    transform: rotate(1turn);
+    background-color: #ff8080; } }
 
 h1 {
   font-family: "Gravitas One" sans-serif;
