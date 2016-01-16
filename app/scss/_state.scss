@@ -1,3 +1,11 @@
+footer a:hover {
+	animation-name: blowupSmall;
+	animation-duration: 0.6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+
 a:hover {
 	animation-duration: 0.7s;
 	animation-name: blowup;
@@ -13,34 +21,70 @@ a:hover {
 	animation-timing-function: linear;
 }
 
+@keyframes blowupSmall {
+	from {
+		font-size: 1.2vh;
+	}
 
+	to {
+		font-size: 1.5vh;
+	}
+}
 
 @keyframes blowup {
 	from {
-		font-size: 2vh;
+		font-size: 3vh;
 	}
 	
 	to {
-		font-size: 2.3vh;
+		font-size: 3.3vh;
 	}
 }
 
 @keyframes rotateBg {
 	from {
 		transform: rotate(0turn);
-		background-color: hsl(0, 100%, 75%);
+		background-color: hsl(0, 100%, 50%);
 	}
 
-	33% {
-		background-color: hsl(120, 100%, 75%);
+	10% {
+		background-color: hsl(36, 100%, 50%);
 	}
 
-	66% {
-		background-color: hsl(240, 100%, 75%);
+	20% {
+		background-color: hsl(72, 100%, 50%);
 	}
 
+	30% {
+		background-color: hsl(108, 100%, 50%);
+	}
+
+	40% {
+		background-color: hsl(144, 100%, 50%);
+	}
+
+	50% {
+		background-color: hsl(180, 100%, 50%);
+	}
+
+	60% {
+		background-color: hsl(216, 100%, 50%);
+	}
+
+	70% {
+		background-color: hsl(252, 100%, 50%);
+	}
+
+	80% {
+		background-color: hsl(288, 100%, 50%);
+	}
+
+	90% {
+		background-color: hsl(324, 100%, 50%);
+	}
+	
 	to {
 		transform: rotate(1turn);
-		background-color: hsl(0, 100%, 75%);
+		background-color: hsl(360, 100%, 50%);
 	}
 }

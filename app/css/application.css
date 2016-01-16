@@ -39,6 +39,11 @@ body {
 a {
   background-color: rgba(0, 0, 0, 0.3); }
 
+footer {
+  color: rgba(255, 255, 255, 0.2); }
+  footer a {
+    color: rgba(255, 255, 255, 0.2); }
+
 body {
   position: relative;
   overflow: hidden; }
@@ -82,6 +87,22 @@ header {
   h1 {
     display: inline-block; } }
 
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 2vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center; }
+
+footer a:hover {
+  animation-name: blowupSmall;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear; }
+
 a:hover {
   animation-duration: 0.7s;
   animation-name: blowup;
@@ -95,23 +116,43 @@ a:hover {
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
 
+@keyframes blowupSmall {
+  from {
+    font-size: 1.2vh; }
+  to {
+    font-size: 1.5vh; } }
+
 @keyframes blowup {
   from {
-    font-size: 2vh; }
+    font-size: 3vh; }
   to {
-    font-size: 2.3vh; } }
+    font-size: 3.3vh; } }
 
 @keyframes rotateBg {
   from {
     transform: rotate(0turn);
-    background-color: #ff8080; }
-  33% {
-    background-color: #80ff80; }
-  66% {
-    background-color: #8080ff; }
+    background-color: red; }
+  10% {
+    background-color: #ff9900; }
+  20% {
+    background-color: #ccff00; }
+  30% {
+    background-color: #33ff00; }
+  40% {
+    background-color: #00ff66; }
+  50% {
+    background-color: cyan; }
+  60% {
+    background-color: #0066ff; }
+  70% {
+    background-color: #3300ff; }
+  80% {
+    background-color: #cc00ff; }
+  90% {
+    background-color: #ff0099; }
   to {
     transform: rotate(1turn);
-    background-color: #ff8080; } }
+    background-color: red; } }
 
 h1 {
   font-family: "Gravitas One" sans-serif;
@@ -119,5 +160,11 @@ h1 {
 
 a {
   font-family: "Nova Round" serif;
-  font-size: 2vh;
+  font-size: 3vh;
   text-decoration: none; }
+
+footer {
+  font-family: "Nova Round" serif;
+  font-size: 1.2vh; }
+  footer a {
+    font-size: 1.2vh; }

@@ -8,6 +8,14 @@ h1 {
 
 a {
 	font-family: $textFontFamily;
-	font-size: 2vh;
+	font-size: 3vh;
 	text-decoration: none;
+}
+
+footer {
+	font-family: $textFontFamily;
+	font-size: 1.2vh;
+	a {
+		font-size: 1.2vh;
+	}
 }

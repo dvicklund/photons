@@ -1,4 +1,5 @@
 $primaryColor: hsl(249, 82%, 19%);
+$fadedColor: hsla(0, 0%, 100%, 0.2);
 
 body {
 	background-color: black;
@@ -10,4 +11,11 @@ body {
 
 a {
 	background-color: hsla(0, 10%, 0%, 0.3);
+}
+
+footer {
+	color: $fadedColor;
+	a {
+		color: $fadedColor;
+	}
 }
