@@ -44,7 +44,10 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	var howdy = 'hi';
+	document.body.addEventListener('touchmove', function (drag) {
+	  drag.preventDefault();
+	});
+
 
 /***/ }
 /******/ ]);
