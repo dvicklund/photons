@@ -131,7 +131,7 @@ a:hover {
 
 @keyframes rotateBg {
   from {
-    transform: rotate(0turn);
+    transform: rotate3d(0, 0, 1, 0deg);
     background-color: red; }
   10% {
     background-color: #ff9900; }
@@ -152,7 +152,7 @@ a:hover {
   90% {
     background-color: #ff0099; }
   to {
-    transform: rotate(1turn);
+    transform: rotate3d(0, 0, 1, 360deg);
     background-color: red; } }
 
 h1 {
