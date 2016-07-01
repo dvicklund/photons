@@ -1,3 +1,3 @@
-document.body.addEventListener('touchmove', function (drag) {
-  drag.preventDefault();
-});
+// document.body.addEventListener('touchmove', function (drag) {
+//   drag.preventDefault();
+// });

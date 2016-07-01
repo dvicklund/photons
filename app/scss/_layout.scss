@@ -1,12 +1,15 @@
 body {
 	position: relative;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .background {
 	z-index: -1;
 	position: absolute;
-	top: 50%;
+	top: 65%;
 	left: 50%;
 	margin-top: -512px;
 	margin-left: -512px;
@@ -15,7 +18,7 @@ body {
 h1 {
 	display: inline-block;
 	position: inherit;
-	margin: 3em auto;
+	margin: 0.2em auto;
 	order: 2;
 }
 
@@ -24,13 +27,20 @@ a {
 }
 
 header {
-	height: 100vh;
+	height: 30vh;
 	width: 100vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+iframe {
+	height: 67vh;
+	max-width: 640px;
+	width: 100vw;
+	opacity: 0.5;
 }
 
 .left {

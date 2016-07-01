@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "gulp-imagemin": "^3.0.1"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
